@@ -1,4 +1,3 @@
-
 add_library(moduleA STATIC
     moduleA.cpp
     moduleA.h

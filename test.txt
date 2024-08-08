@@ -1,0 +1,118 @@
+build
+└── Release
+    ├── Algo
+    │   ├── CMakeFiles
+    │   │   ├── AlgoLib.dir
+    │   │   │   ├── DependInfo.cmake
+    │   │   │   ├── algorithm.cpp.o
+    │   │   │   ├── algorithm.cpp.o.d
+    │   │   │   ├── build.make
+    │   │   │   ├── cmake_clean.cmake
+    │   │   │   ├── cmake_clean_target.cmake
+    │   │   │   ├── compiler_depend.make
+    │   │   │   ├── compiler_depend.ts
+    │   │   │   ├── depend.make
+    │   │   │   ├── flags.make
+    │   │   │   ├── link.txt
+    │   │   │   └── progress.make
+    │   │   ├── CMakeDirectoryInformation.cmake
+    │   │   └── progress.marks
+    │   ├── Makefile
+    │   ├── cmake_install.cmake
+    │   ├── libAlgoLib.a
+    │   ├── moduleA
+    │   │   ├── CMakeFiles
+    │   │   │   ├── CMakeDirectoryInformation.cmake
+    │   │   │   ├── moduleA.dir
+    │   │   │   │   ├── DependInfo.cmake
+    │   │   │   │   ├── build.make
+    │   │   │   │   ├── cmake_clean.cmake
+    │   │   │   │   ├── cmake_clean_target.cmake
+    │   │   │   │   ├── compiler_depend.make
+    │   │   │   │   ├── compiler_depend.ts
+    │   │   │   │   ├── depend.make
+    │   │   │   │   ├── flags.make
+    │   │   │   │   ├── link.txt
+    │   │   │   │   ├── moduleA.cpp.o
+    │   │   │   │   ├── moduleA.cpp.o.d
+    │   │   │   │   └── progress.make
+    │   │   │   └── progress.marks
+    │   │   ├── Makefile
+    │   │   ├── cmake_install.cmake
+    │   │   └── libmoduleA.a
+    │   └── moduleB
+    │       ├── CMakeFiles
+    │       │   ├── CMakeDirectoryInformation.cmake
+    │       │   ├── moduleB.dir
+    │       │   │   ├── DependInfo.cmake
+    │       │   │   ├── build.make
+    │       │   │   ├── cmake_clean.cmake
+    │       │   │   ├── cmake_clean_target.cmake
+    │       │   │   ├── compiler_depend.make
+    │       │   │   ├── compiler_depend.ts
+    │       │   │   ├── depend.make
+    │       │   │   ├── flags.make
+    │       │   │   ├── link.txt
+    │       │   │   ├── moduleB.cpp.o
+    │       │   │   ├── moduleB.cpp.o.d
+    │       │   │   └── progress.make
+    │       │   └── progress.marks
+    │       ├── Makefile
+    │       ├── cmake_install.cmake
+    │       └── libmoduleB.a
+    ├── CMakeCache.txt
+    ├── CMakeFiles
+    │   ├── 3.27.7
+    │   │   ├── CMakeCXXCompiler.cmake
+    │   │   ├── CMakeDetermineCompilerABI_CXX.bin
+    │   │   ├── CMakeSystem.cmake
+    │   │   └── CompilerIdCXX
+    │   │       ├── CMakeCXXCompilerId.cpp
+    │   │       ├── CMakeCXXCompilerId.o
+    │   │       └── tmp
+    │   ├── CMakeConfigureLog.yaml
+    │   ├── CMakeDirectoryInformation.cmake
+    │   ├── CMakeScratch
+    │   ├── Makefile.cmake
+    │   ├── Makefile2
+    │   ├── TargetDirectories.txt
+    │   ├── cmake.check_cache
+    │   ├── pkgRedirects
+    │   ├── progress.marks
+    │   └── study.dir
+    │       ├── DependInfo.cmake
+    │       ├── build.make
+    │       ├── cmake_clean.cmake
+    │       ├── compiler_depend.make
+    │       ├── compiler_depend.ts
+    │       ├── depend.make
+    │       ├── flags.make
+    │       ├── link.txt
+    │       ├── main.cpp.o
+    │       ├── main.cpp.o.d
+    │       └── progress.make
+    ├── Makefile
+    ├── cmake_install.cmake
+    ├── study
+    └── windows
+        ├── CMakeFiles
+        │   ├── CMakeDirectoryInformation.cmake
+        │   ├── progress.marks
+        │   └── windows.dir
+        │       ├── DependInfo.cmake
+        │       ├── build.make
+        │       ├── cmake_clean.cmake
+        │       ├── cmake_clean_target.cmake
+        │       ├── compiler_depend.make
+        │       ├── compiler_depend.ts
+        │       ├── depend.make
+        │       ├── flags.make
+        │       ├── link.txt
+        │       ├── progress.make
+        │       ├── window.cpp.o
+        │       └── window.cpp.o.d
+        ├── Makefile
+        ├── cmake_install.cmake
+        └── libwindows.a
+
+21 directories, 95 files
