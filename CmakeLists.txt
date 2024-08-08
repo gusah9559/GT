@@ -11,7 +11,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED true)
 ## CPP CHECK
 find_program(CPPCHECKTOOL cppcheck)
 if (CPPCHECKTOOL)
-    set(CMAKE_CXX_CPPCHECK "${CPPCHECKTOOL}" "--enable=all")
+   set(CMAKE_CXX_CPPCHECK "${CPPCHECKTOOL}" "--enable=all" "--output-file=${CURRENT_DIR_NAME}_cppcheck.txt")
 else()
     message("CPP_CHECK TOOL NOT FOUND")
 endif()
