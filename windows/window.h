@@ -1,8 +1,6 @@
 #ifndef __WINDOWS_H__
 #define __WINDOWS_H__
 
-bool initializeOpenGL();
-void renderLoop();
-void cleanup();
+void createBlackScreenWindow();
 
 #endif // WINDOWS_H

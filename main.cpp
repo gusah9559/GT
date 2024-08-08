@@ -9,13 +9,7 @@ int main(void){
     // call algorithm
     if(algorithm()) cout << "algorithm Function call Success" << endl;
 
-   if (!initializeOpenGL()) {
-        return -1;
-    }
-
-    renderLoop();
-    cleanup();
-
+    createBlackScreenWindow();
     return 0;
 }
 
