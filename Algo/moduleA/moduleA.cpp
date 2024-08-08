@@ -4,5 +4,6 @@ using namespace std;
 
 
 void moduleA(){
+    int a = 0;
     cout << "moduleA Complete" << endl;
 } 

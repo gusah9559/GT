@@ -14,5 +14,6 @@ bool algorithm(void){
 
     moduleB();
 
+    int k = 4 / 0;
     return 1;
 }
