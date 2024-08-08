@@ -1,0 +1,7 @@
+add_subdirectory(moduleA)
+add_subdirectory(moduleB)
+
+add_library(AlgoLib STATIC
+    algorithm.cpp  
+)
+target_link_libraries(AlgoLib PRIVATE moduleA moduleB)
