@@ -3,8 +3,15 @@ cmake_minimum_required(VERSION 3.20)
 project(study VERSION 1.0 LANGUAGES CXX)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra")
 
-################# GTEST ######################
+################
+## Configure
+################
+set(RUN_MODE 0) # 0 DEBUG 1 Release ( NOT BUILD just for Code level)
+
+################
+## G-TEST
 ## FetchContent
+################
 include(FetchContent)
 
 FetchContent_Declare(
@@ -13,13 +20,16 @@ FetchContent_Declare(
   GIT_TAG        release-1.12.1  
 )
 FetchContent_MakeAvailable(googletest)
-##############################################
 
+################
 ## Version
+################
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED true)
 
+################
 ## CPP CHECK
+################
 find_program(CPPCHECKTOOL cppcheck)
 if (CPPCHECKTOOL)
    set(CMAKE_CXX_CPPCHECK "${CPPCHECKTOOL}" "--enable=all" "--suppress=missingIncludeSystem" "--output-file=cppcheck.txt")
@@ -27,12 +37,29 @@ else()
     message("CPP_CHECK TOOL NOT FOUND")
 endif()
 
-## Sub Directory manage
+################
+## Configure
+################
+configure_file(
+  ${CMAKE_CURRENT_SOURCE_DIR}/config.h.in
+  ${CMAKE_CURRENT_BINARY_DIR}/config.h
+)
+
+#################
+## Sub Directory
+## Manage
+#################
 add_subdirectory(Algo)
 add_subdirectory(ViewerModule)
 add_subdirectory(ParserModule)
 
+#################
 ## Executable
+#################
 add_executable(study main.cpp)
+
+include_directories(${CMAKE_CURRENT_BINARY_DIR})
+#################
 ## Link libraries
+#################
 target_link_libraries(study PUBLIC AlgoM viewerM)
