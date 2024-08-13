@@ -2,10 +2,10 @@ find_package(OpenGL REQUIRED)
 find_package(glfw3 REQUIRED)
 find_package(GLEW REQUIRED)
 
-add_library(windows STATIC
-    window.cpp
+add_library(viewerM STATIC
+    viewer.cpp
 )
 
-target_link_libraries(windows PRIVATE OpenGL::GL glfw GLEW::GLEW)
+target_link_libraries(viewerM PRIVATE OpenGL::GL glfw GLEW::GLEW)
 
-target_include_directories(windows PRIVATE ${OPENGL_INCLUDE_DIR} ${GLFW_INCLUDE_DIRS} ${GLEW_INCLUDE_DIRS})
+target_include_directories(viewerM PRIVATE ${OPENGL_INCLUDE_DIR} ${GLFW_INCLUDE_DIRS} ${GLEW_INCLUDE_DIRS})

@@ -1,0 +1,5 @@
+add_library(parserM STATIC
+    readpcl.cpp
+)
+
+target_include_directories(parserM PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

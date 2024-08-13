@@ -29,9 +29,10 @@ endif()
 
 ## Sub Directory manage
 add_subdirectory(Algo)
-add_subdirectory(windows)
+add_subdirectory(ViewerModule)
+add_subdirectory(ParserModule)
 
 ## Executable
 add_executable(study main.cpp)
 ## Link libraries
-target_link_libraries(study PUBLIC AlgoLib windows)
+target_link_libraries(study PUBLIC AlgoM viewerM)
