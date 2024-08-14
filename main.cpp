@@ -20,7 +20,7 @@ int main(void){
     for(size_t v = 0; v < points.size(); v++) 
         cout << points[v].x << points[v].y << points[v].z << endl;
 
-    createBlackScreenWindow();
+    createBlackScreenWindow(points);
 #if RUN_MODE == DEBUG
     cout << "Debug MODE" << endl;
 #endif
