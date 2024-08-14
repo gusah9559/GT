@@ -62,4 +62,4 @@ include_directories(${CMAKE_CURRENT_BINARY_DIR})
 #################
 ## Link libraries
 #################
-target_link_libraries(study PUBLIC AlgoM viewerM)
+target_link_libraries(study PUBLIC AlgoM viewerM parserM)

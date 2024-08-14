@@ -1,5 +1,10 @@
+find_package(PCL REQUIRED)
+
+include_directories(${PCL_INCLUDE_DIRS})
+
 add_library(parserM STATIC
     readpcl.cpp
 )
 
 target_include_directories(parserM PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_link_libraries(parserM ${PCL_LIBRARIES})

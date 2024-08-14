@@ -1,4 +1,7 @@
-#ifndef __READ_PCL__
-#define __READ_PCL__
+#ifndef READ_PCL_H
+#define READ_PCL_H
+#include "../Customtype.h"
 
-#endif
+void testPCL(vector<Point3D>& points);
+
+#endif // READ_PCL_H
