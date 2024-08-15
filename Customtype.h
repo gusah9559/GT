@@ -1,5 +1,5 @@
-#ifndef __CUSTOM_TYPE_H
-#define __CUSTOM_TYPE_H
+#ifndef __CUSTOM_TYPE_H__
+#define __CUSTOM_TYPE_H__
 
 #include <iostream>
 using namespace std;
@@ -16,4 +16,4 @@ struct Point3D {
     }
 };
 
-#endif 
+#endif // __CUSTOM_TYPE_H__

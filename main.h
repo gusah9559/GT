@@ -1,7 +1,8 @@
-#ifndef __MAIN__
-#define __MAIN__
+#ifndef __MAIN_H__
+#define __MAIN_H__
 
 #include "config.h"
 #define DEBUG 0
 #define RELEASE 1
-#endif
+
+#endif // __MAIN_H__

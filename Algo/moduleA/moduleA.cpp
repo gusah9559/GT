@@ -3,6 +3,4 @@
 using namespace std;
 
 
-void moduleA(){
-    cout << "moduleA Complete" << endl;
-} 
+void moduleA(){} 
