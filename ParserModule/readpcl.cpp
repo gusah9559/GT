@@ -1,12 +1,13 @@
-#include <iostream>
 #include "readpcl.h"
+#include "../Customtype.h"
+#include <iostream>
 #include <pcl/io/pcd_io.h>
 #include <pcl/point_types.h>
-#include "../Customtype.h"
 
 using namespace std;
 
-void testPCL(vector<Point3D>& points){
+void testPCL(vector<Point3D> &points)
+{
     pcl::PointCloud<pcl::PointXYZ> cloud;
 
     cloud.width = 5;
@@ -16,7 +17,8 @@ void testPCL(vector<Point3D>& points){
 
     points.clear();
 
-    for(auto& p : cloud.points){
+    for (auto &p : cloud.points)
+    {
         p.x = 1024 * rand() / (RAND_MAX + 1.0f);
         p.y = 1024 * rand() / (RAND_MAX + 1.0f);
         p.z = 1024 * rand() / (RAND_MAX + 1.0f);

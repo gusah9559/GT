@@ -1,6 +1,5 @@
-#include <iostream>
 #include "moduleA.h"
+#include <iostream>
 using namespace std;
 
-
-void moduleA(){} 
+void moduleA() {}
