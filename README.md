@@ -1,1 +1,2 @@
-# GT
+## WELCOME !
+# STUDY TOY PROJECT #

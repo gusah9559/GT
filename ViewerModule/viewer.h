@@ -2,5 +2,4 @@
 #define __WINDOWS_H__
 
 void createBlackScreenWindow();
-
-#endif // WINDOWS_H
+#endif // __WINDOWS_H__

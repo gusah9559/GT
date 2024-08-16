@@ -1,6 +1,6 @@
-#ifndef __MODULE_A__
-#define __MODULE_A__
+#ifndef __MODULE_A_H__
+#define __MODULE_A_H__
 
 void moduleA();
 
-#endif
+#endif // __MODULE_A_H__

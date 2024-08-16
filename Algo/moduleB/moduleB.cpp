@@ -1,13 +1,7 @@
-#include <iostream>
 #include "moduleB.h"
+#include <iostream>
 #include <math.h>
 
 using namespace std;
 
-
-void moduleB(){
-
-    int result = 10 + 5;
-    cout << "result : " << result << endl;
-    cout << "moduleB Complete" << endl;
-} 
+void moduleB() {}

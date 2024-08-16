@@ -1,18 +1,8 @@
-#include <iostream>
 #include "algorithm.h"
-#include "moduleA/moduleA.h"
-#include "moduleB/moduleB.h"
+#include "ModuleA/moduleA.h"
+#include "ModuleB/moduleB.h"
+#include <iostream>
 
 using namespace std;
 
-bool algorithm(void){
-    cout << "algorithm Start" << endl;
-
-    cout << "Call several algorithm module" << endl;
-
-    moduleA();
-
-    moduleB();
-
-    return 1;
-}
+bool algorithm(void) { return true; }

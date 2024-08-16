@@ -1,5 +1,4 @@
-add_library(moduleB STATIC
+add_library(ModuleB STATIC
     moduleB.cpp
-    moduleB.h
 )
-target_include_directories(moduleB PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_include_directories(ModuleB PRIVATE)

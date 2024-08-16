@@ -1,0 +1,12 @@
+find_package(PCL REQUIRED)
+
+set(SOURCE_FILES parsertest.cpp)
+
+if(PCL_FOUND)
+    list(APPEND SOURCE_FILES readpcl.cpp)
+endif()
+
+add_library(ParserM STATIC ${SOURCE_FILES})
+
+target_include_directories(ParserM PRIVATE $<IF:$<BOOL:${PCL_FOUND}>,${PCL_INCLUDE_DIRS},>)
+target_link_libraries(ParserM PRIVATE $<IF:$<BOOL:${PCL_FOUND}>,${PCL_LIBRARIES},>)
