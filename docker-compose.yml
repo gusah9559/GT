@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  my_service:
+    entrypoint: "/bin/bash"
+    image: 691be48bc6a4  # 사용하고자 하는 Docker 이미지 이름
+    container_name: testCon
+    volumes:
+      - .:/workspace  # 호스트와 컨테이너 간의 디렉토리 마운트
+      - /tmp/.X11-unix:/tmp/.X11-unix  # X11 소켓 마운트
+    environment:
+    #  - MY_ENV_VAR=my_value  # 환경 변수 설정
+      - DISPLAY=host.docker.internal:0  # X11 디스플레이 환경 변수 설정
+    #devices:  # MAC 환경에는 없음
+    #  - /dev/snd  # 호스트의 디바이스를 컨테이너에 연결 (예: 사운드 카드)
+    cap_add:
+      - SYS_ADMIN  # 추가적인 권한 부여
+    network_mode: "host"  # 호스트 네트워크 모드 설정
+    #command: /bin/bash -c "while true; do echo hello world; sleep 1; done"  # 컨테이너가 실행할 명령어
+    stdin_open: true
+    tty: true

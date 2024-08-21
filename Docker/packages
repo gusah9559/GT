@@ -1,0 +1,9 @@
+libopencv-dev
+libgl1-mesa-glx
+libgl1-mesa-dev
+cmake
+build-essential
+libglew-dev
+libglfw3-dev
+git
+libpcl-dev
